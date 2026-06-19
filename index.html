@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AfrikaWild - Exploration & Découverte</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header class="main-header">
+        <div class="logo">
+            <span class="brand">AFRIKAWILD</span>
+            <span class="sub-brand">L.E.O☘️ EDUCATION</span>
+        </div>
+        <nav class="nav-links">
+            <a href="#accueil" class="nav-item active" data-target="accueil">Accueil</a>
+            <a href="#galerie" class="nav-item" data-target="galerie">Galerie</a>
+            <a href="#apropos" class="nav-item" data-target="apropos">À propos</a>
+            <a href="#contact" class="nav-item" data-target="contact">Contact</a>
+        </nav>
+    </header>
+
+    <section id="accueil" class="section-page active-section">
+        <div class="hero-section">
+            <div class="hero-bg"></div>
+            <div class="hero-content">
+                <p class="hero-subtitle">EXPLORATION & DÉCOUVERTE</p>
+                <h1>Découvrez les animaux sauvages d'Afrique</h1>
+                <p class="hero-description">
+                    Partez à la rencontre des créatures les plus fascinantes de la savane, de la forêt équatoriale et des déserts du continent africain.
+                </p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary">En savoir plus <span class="arrow">→</span></button>
+                    <button class="btn btn-secondary" id="hero-go-gallery">👁 Voir la galerie</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="stats-container">
+            <p class="scroll-mention">DÉFILER</p>
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h2>1 200+</h2>
+                    <p>espèces recensées</p>
+                </div>
+                <div class="stat-item">
+                    <h2>54</h2>
+                    <p>Pays d'Afrique</p>
+                </div>
+                <div class="stat-item">
+                    <h2>3 000</h2>
+                    <p>Parcs naturels</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="species-section">
+            <p class="section-tag">LA FAUNE AFRICAINE</p>
+            <h2>Les Grandes Espèces</h2>
+            <p class="section-intro">Trois ambassadeurs de la biodiversité africaine — emblèmes d'un continent à la nature incomparable.</p>
+            
+            <div class="species-grid">
+                <div class="species-card">
+                    <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?auto=format&fit=crop&w=600&q=80" alt="Lion">
+                    <div class="card-badge">PANTHERA LEO</div>
+                    <h3>Le Lion</h3>
+                    <p>Surnommé le « Roi des animaux », ses rugissements résonnent à plus de 8 km et son organisation sociale en fierté est unique parmi les grands félins.</p>
+                    <a href="#" class="explore-link">Explorer →</a>
+                </div>
+                <div class="species-card">
+                    <img src="https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?auto=format&fit=crop&w=600&q=80" alt="Éléphant">
+                    <div class="card-badge">LOXODONTA AFRICANA</div>
+                    <h3>L'Éléphant</h3>
+                    <p>Le plus grand mammifère terrestre. Doté d'une mémoire exceptionnelle et d'une intelligence remarquable, il joue un rôle clé dans l'écosystème.</p>
+                    <a href="#" class="explore-link">Explorer →</a>
+                </div>
+                <div class="species-card">
+                    <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&w=600&q=80" alt="Girafe">
+                    <div class="card-badge">GIRAFFE CAMELOPARDALIS</div>
+                    <h3>La Girafe</h3>
+                    <p>Le plus grand animal terrestre, culminant à une hauteur de 5,5 mètres. Les girafes se nourrissent de feuilles en cimes des acacias.</p>
+                    <a href="#" class="explore-link">Explorer →</a>
+                </div>
+            </div>
+
+            <div class="gallery-cta">
+                <h3>Prêt à explorer la galerie complète ?</h3>
+                <p>Découvrez plus de 12 portraits d'animaux sauvages africains, photographiés dans leur habitat naturel.</p>
+                <button class="btn btn-purple" id="cta-go-gallery">Ouvrir la galerie</button>
+            </div>
+        </div>
+    </section>
+
+    <section id="galerie" class="section-page">
+        <div class="gallery-header">
+            <p class="section-tag">PHOTOGRAPHIES</p>
+            <h1>Galerie Sauvage</h1>
+            <p class="section-intro">Chaque image est une fenêtre ouverte sur la vie extraordinaire de la faune africaine.</p>
+            
+            <div class="filter-tags">
+                <span class="tag active" data-filter="tous">Tous</span>
+                <span class="tag" data-filter="predateur">Prédateur</span>
+                <span class="tag" data-filter="herbivore">Herbivore</span>
+                <span class="tag" data-filter="savane">Savane</span>
+            </div>
+        </div>
+
+        <div class="gallery-grid">
+            <div class="gallery-item" data-category="predateur">
+                <img src="https://images.unsplash.com/photo-1546182990-dffeafbe841d?auto=format&fit=crop&w=500&q=80" alt="Lion">
+                <div class="item-info">
+                    <span class="badge badge-predateur">PRÉDATEUR</span>
+                    <h4>Regard perçant</h4>
+                    <p>Panthera leo — Surveille son territoire depuis une colline</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="predateur">
+                <img src="https://images.unsplash.com/photo-1517849845537-4d257902454a?auto=format&fit=crop&w=500&q=80" alt="Guépard">
+                <div class="item-info">
+                    <span class="badge badge-predateur">PRÉDATEUR</span>
+                    <h4>Guépard en course</h4>
+                    <p>Acinonyx jubatus — L'animal terrestre le plus rapide du monde</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="herbivore">
+                <img src="https://images.unsplash.com/photo-1557050543-4d5f4e07ef46?auto=format&fit=crop&w=500&q=80" alt="Éléphant">
+                <div class="item-info">
+                    <span class="badge badge-herbivore">HERBIVORE</span>
+                    <h4>Éléphant au crépuscule</h4>
+                    <p>Loxodonta africana — Baignade au coucher du soleil</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="herbivore">
+                <img src="https://images.unsplash.com/photo-1547471080-7cc2caa01a7e?auto=format&fit=crop&w=500&q=80" alt="Girafe">
+                <div class="item-info">
+                    <span class="badge badge-herbivore">HERBIVORE</span>
+                    <h4>Girafe solitaire</h4>
+                    <p>Giraffa camelopardalis — Broutant les cimes des acacias</p>
+                </div>
+            </div>
+            <div class="gallery-item" data-category="savane">
+                <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=500&q=80" alt="Zèbres">
+                <div class="item-info">
+                    <span class="badge badge-savane">SAVANE</span>
+                    <h4>Zèbres en troupeau</h4>
+                    <p>Equus quagga — Grande Migration au Masaï Mara</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="apropos" class="section-page">
+        <div class="about-container">
+            <p class="section-tag">NOTRE HISTOIRE</p>
+            <h1>À Propos</h1>
+            <div class="about-hero-img">
+                <img src="https://images.unsplash.com/photo-1516426122078-c23e76319801?auto=format&fit=crop&w=1200&q=80" alt="Paysage de savane">
+            </div>
+            <div class="about-content">
+                <h2>Un voyage au cœur de la faune africaine</h2>
+                <p><strong>AfrikaWild</strong> est une plateforme éducative dédiée pour éveiller la curiosité du monde entier sur la richesse incroyable de la faune africaine. Né d'une passion pour la nature et la photographie animalière, ce projet rassemble des centaines de photos, vidéos et fiches pédagogiques sur les animaux sauvages du continent.</p>
+            </div>
+            <div class="pillars-grid">
+                <div class="pillar-card">
+                    <div class="pillar-icon">📚</div>
+                    <h3>Notre Mission</h3>
+                    <p>Sensibiliser le grand public à la beauté et à la fragilité de la biodiversité africaine, en proposant un contenu éducatif de qualité, fiable, rigoureux et accessible à tous.</p>
+                </div>
+                <div class="pillar-card">
+                    <div class="pillar-icon">🌍</div>
+                    <h3>Nos Objectifs</h3>
+                    <p>Constituer une encyclopédie vivante des animaux sauvages d'Afrique, soutenir la recherche et les initiatives de conservation, et inspirer les générations futures.</p>
+                </div>
+                <div class="pillar-card">
+                    <div class="pillar-icon">🤝</div>
+                    <h3>Nos Valeurs</h3>
+                    <p>Respect du vivant, rigueur scientifique, accessibilité pédagogique et engagement pour la protection des écosystèmes africains menacés.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="section-page">
+        <div class="contact-container">
+            <p class="section-tag">NOUS ÉCRIRE</p>
+            <h1>Contactez-nous</h1>
+            <p class="contact-subtitle">Une question, un partenariat, ou simplement l'envie de partager votre amour pour la faune africaine ? Écrivez-nous.</p>
+            
+            <div class="contact-layout">
+                <div class="contact-info">
+                    <h3>Informations</h3>
+                    <p>📍 <strong>Adresse :</strong> Parc africain </p>
+                    <p>✉️ <strong>Email :</strong> lemdjooceanne@gmail.com</p>
+                    <p>📞 <strong>Téléphone :</strong> +237 671304757</p>
+                </div>
+                
+                <form class="contact-form" onsubmit="event.preventDefault();">
+                    <div class="form-group">
+                        <label for="name">Prénom *</label>
+                        <input type="text" id="name" value="Aminata" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Adresse e-mail *</label>
+                        <input type="email" id="email" placeholder="contact@exemple.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message *</label>
+                        <textarea id="message" rows="5" placeholder="Écrivez votre message ici..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-submit">Envoyer le message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="main-footer">
+        <div class="footer-top">
+            <div class="footer-brand">
+                <h3>AfrikaWild</h3>
+                <p>Plateforme éducative dédiée à la faune africaine. Explorez, apprenez et aidez à protéger les espèces sauvages d'Afrique.</p>
+                <div class="social-icons">
+                    <span>🌐</span><span>📷</span><span>🎥</span>
+                </div>
+            </div>
+            <div class="footer-nav">
+                <h4>NAVIGATION</h4>
+                <ul>
+                    <li><a href="#accueil" data-target="accueil">Accueil</a></li>
+                    <li><a href="#galerie" data-target="galerie">Galerie</a></li>
+                    <li><a href="#apropos" data-target="apropos">À propos</a></li>
+                    <li><a href="#contact" data-target="contact">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 L.E.O AfrikaWild. Tous droits réservés.</p>
+            <p>Fait avec passion pour la faune africaine</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
